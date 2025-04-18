@@ -1,2 +1,14 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/IbH2dxOE)
-[![Open in Codespaces](https://classroom.github.com/assets/launch-codespace-2972f46106e565e64193e422d61a12cf1da4916b45550586e14ef0a7c637dd04.svg)](https://classroom.github.com/open-in-codespaces?assignment_repo_id=18967276)
+# Exercício em Aula 5 - Front-End I
+
+Este repositório foi criado para a disciplina de **Front-End I** no curso de **Análise e Desenvolvimento de Sistemas** do **IFSC**. 
+
+Aqui serão desenvolvidos exercícios e projetos relacionados ao conteúdo abordado em aula.
+
+## Estrutura
+
+- **Exercícios:** Implementações práticas para reforçar o aprendizado.
+- **Projetos:** Aplicações desenvolvidas ao longo da disciplina.
+
+## Objetivo
+
+O objetivo deste repositório é acompanhar o progresso e consolidar os conhecimentos adquiridos durante a disciplina.
