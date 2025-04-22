@@ -1,4 +1,4 @@
-# Exercício em Aula 5 - Front-End I
+# Exercícios - Front-End I
 
 Este repositório foi criado para a disciplina de **Front-End I** no curso de **Análise e Desenvolvimento de Sistemas** do **IFSC**. 
 
