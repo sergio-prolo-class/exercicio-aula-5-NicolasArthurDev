@@ -1,6 +1,6 @@
 # Exercícios - Front-End I
 
-Este repositório foi criado para a disciplina de **Front-End I** no curso de **Análise e Desenvolvimento de Sistemas** do **IFSC**. 
+Este repositório foi criado para a disciplina de **Front-End I** no curso de **Análise e Desenvolvimento de Sistemas** do **IFSC** pelo aluno **Nicolas Arthur Raulino Oliveira**. 
 
 Aqui serão desenvolvidos exercícios e projetos relacionados ao conteúdo abordado em aula.
 
