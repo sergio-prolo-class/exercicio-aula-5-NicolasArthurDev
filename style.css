@@ -3,26 +3,133 @@ html {
 }
 
 *, *:before, *:after {
+    margin: 0;
     box-sizing: inherit;
 }
 
-body {
-    background-color: #000;
-    color: #fff;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
-    padding: 40px;
-    margin: 0;
+
+
+/* Celular médio/grande	max-width: 768px ------------------------------------------------------------------------------------------------------------*/
+@media screen and (max-width: 768px) {
+    body {
+        margin: 0 auto; /* Centraliza a página */
+        padding: 0 15px; /* Adiciona um espaçamento interno para evitar que o conteúdo encoste nas bordas */
+        font-size: 25px;
+    }
+
+    .menu ul {
+        list-style-type: circle;
+        font-size: 30px;
+        font-weight: bold;
+    }
+
+    .menu ul li {
+        margin-bottom: 25px;
+    }
+
+
+    .imagem {
+        text-align: center;
+        margin: 40px 0;
+    }
+
+    header img {
+        border-radius: 50%;
+        border: 5px solid #ffcc00;
+        max-width: 80%;
+        display: block;
+        margin: 0 auto;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        font-size: 30px;
+        margin: 20px auto;
+        padding: 0 15px;
+    }
+
+    p {
+        font-size: 25px;
+        margin: 0 auto;
+        padding: 0 15px;
+    }
+
+    hr {
+        border: 1px solid #ffcc00;
+        margin: 20px 0;
+    }
+
+    a {
+        text-decoration: underline #ffcc00;
+        color: white;
+    }
+
+    .caixa-habilidade {
+        background-color: #111;
+        border: 2px solid #ffcc00;
+        padding: 20px;
+        margin: 30px;
+        height: auto;
+        overflow: auto;
+    }
+
+    #layout {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        gap: 10px;
+        
+    }
+    
+    #layout img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        
+    }
+
+    footer {
+        text-align: center;
+        font-size: 30px;
+        margin: 60px auto;
+    }
+
 }
 
-.menu ul {
-    display: flex;
-    justify-content: space-around;
-    list-style-type: none;
-    margin: 30px 0;
-    padding: 0;
-    font-size: 20px;
-    font-weight: bold;
+/* Tablet	max-width: 1024px ------------------------------------------------------------------------------------------------------------*/
+/* Desktop	min-width: 1025px ------------------------------------------------------------------------------------------------------------*/
+@media screen and (min-width: 1025px) {
+    .menu ul {
+        display: flex;
+        justify-content: space-around;
+        list-style-type: none;
+        margin: 30px 0;
+        padding: 0;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    a:hover {
+        color: #ffcc00;
+        font-size: 21px;
+    }
+
+    .caixa-habilidade {
+        background-color: #111;
+        border: 2px solid #ffcc00;
+        padding: 20px;
+        margin: 30px;
+        height: auto;
+        overflow: auto;
+    }
+    
+
+
+button:hover {
+    background-color:rgb(36, 36, 36);
+    color: #ffcc00;
+    padding: 15px 25px;
+    font-size: 16px;
 }
 
 header img {
@@ -30,12 +137,70 @@ header img {
     border: 5px solid #ffcc00;
     width: 200px;
     display: block;
-    margin: 0 auto;
+    margin: 10px auto;
 }
 
-.center {
-    text-align: center;
+.colunas {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
 }
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 16px;
+    color: #ffcc00;
+    margin: 60px auto;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+#layout {
+    display: grid;
+    grid-template-columns: 150px 150px 150px;
+    grid-template-rows: 150px 150px 150px;
+    gap: 10px;
+}
+
+#layout img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+}
+/* Estilos gerais ------------------------------------------------------------------------------------------------------------*/
+
+body {
+    background-color: #000;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%; /* Garante que ocupe toda a largura em telas menores */
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    background-color: #ffcc00;
+    color: black;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.button {
+    text-align: center;
+    margin: 25px 0;
+}
+
+
 
 aside {
     float: right;
@@ -47,6 +212,8 @@ aside {
 .secao-disciplinas table {
     border: 2px solid #ffcc00;
     text-align: center;
+    width: 100%; /* Garante que a tabela ocupe toda a largura */
+    margin: 20px 0;
 }
 
 .secao-disciplinas table th, .secao-disciplinas table td {
@@ -61,34 +228,28 @@ aside {
 }
 
 .secao-onibus table {
-    width: 80%;
+    width: 100%; /* Ajusta a largura para telas menores */
     margin: 30px auto;
     text-align: center;
     background-color: #111;
 }
 
 .secao-onibus table td {
-    background-color: #222
+    background-color: #222;
 }
 
 .secao-onibus table td:hover {
     border: 2px solid #ffcc00;
 }
 
-a {
-    color: white;
-    text-decoration: none;
-    transition: 0.2s;
-}
 
-a:hover {
-    color: #ffcc00;
-    font-size: 21px;
-}
+
+
 
 h1, h3 {
     color: #ffcc00;
     font-weight: bold;
+    margin: 20px auto;
 }
 
 
@@ -128,65 +289,18 @@ h1 {
 
 
 
-.caixa-habilidade {
-    background-color: #111;
-    border: 2px solid #ffcc00;
-    padding: 20px;
-    margin: 30px;
-    height: 300px;
-    overflow: auto;
-}
-
-button {
-    padding: 10px 20px;
-    font-size: 16px;
-    border: none;
-    background-color: #ffcc00;
-    color: black;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: 0.3s;
-}
-
-button:hover {
-    background-color:rgb(36, 36, 36);
-    color: #ffcc00;
-    padding: 15px 25px;
-    font-size: 16px;
-}
 
 .center {
     text-align: center;
 }
 
-footer {
-    text-align: center;
-    margin-top: 40px;
-    font-size: 16px;
-    color: #ffcc00;
-}
-
-.colunas {
-    display: flex;
-    justify-content: space-around;
-    margin: 20px 0;
-}
 
 
 
-#layout {
-    display: grid;
-    grid-template-columns: 150px 150px 150px;
-    grid-template-rows: 150px 150px 150px;
-    gap: 10px;
-}
 
-#layout img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-}
+
+
+
 
 .top-10-filmes ol li:hover {
     background-color:rgb(36, 36, 36);
@@ -216,12 +330,13 @@ footer {
 }
 
 .nav-loja {
-    position: fixed;
+    position: sticky;
     top: 0;
     left: 0;
     z-index: 1000;
     width: 100%;
     background-color: #111;
+    padding: 20px 0;
 }
 
 .nav-loja ul {
